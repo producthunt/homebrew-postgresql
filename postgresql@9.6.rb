@@ -57,11 +57,6 @@ class PostgresqlAT96 < Formula
 
     args << "--enable-cassert" if build.with? "cassert"
 
-    extra_version = ""
-    extra_version += "+git" if build.head?
-    extra_version += " (Homebrew petere/postgresql)"
-    args << "--with-extra-version=#{extra_version}"
-
     ENV["XML_CATALOG_FILES"] = "#{etc}/xml/catalog"
 
     system "./configure", *args
