@@ -43,6 +43,7 @@ class PostgresqlAT96 < Formula
       --with-perl
       --with-python
       --with-tcl
+      --without-perl
       XML2_CONFIG=:
     ]
 
